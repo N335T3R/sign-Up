@@ -1,0 +1,88 @@
+:root {
+    --create-acct-btn-bgc: #596D48;
+    --input-border: #E5E7EB;
+    --invalid-border: red;
+    --valid-border: green;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    background-color: #fff;
+    height: 70%;
+    width: 100%;
+}
+
+.leaves {
+    width: 35%;
+    height: 100%;
+    background-color: green;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 65%;
+    background-color: white;
+    opacity: .35;
+}
+
+main > * {
+    height: 33%;
+    width: 100%;
+}
+
+.disclaimer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: flex-end;
+
+    font-size: x-small;
+    font-weight: 600;
+}
+
+.disclaimer > p {
+    margin: 0.25rem;
+}
+
+
+.formContainer {
+    background-color: white;
+    box-shadow: 0 0.15rem 0.5rem black;
+    padding: 1rem;
+}
+
+fieldset {
+    border: none;
+}
+legend {
+    font-size: small;
+    font-weight: 600;
+}
+
+.footer {
+    padding: 1rem 1rem;
+    font-size: x-small;
+    font-weight: 600;
+}
+.footer > button {
+    margin-bottom: 1rem;
+    background-color: var(--create-acct-btn-bgc);
+    border: none;
+    border-radius: 0.15rem;
+    height: 1.5rem;
+}
