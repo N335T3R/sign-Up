@@ -22,13 +22,43 @@
                 <form id="signUpForm" action="#" method="GET">
                     <fieldset>
                         <legend>Let's do this!</legend>
+
+                        <div class="labelWrapper">
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" name="firstName" id="firstName">
+                        </div>
+                        
+                        <div class="labelWrapper">
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" name="lastName" id="lastName">
+                        </div>
+                        
+                        <div class="labelWrapper">
+                            <label for="email">EMAIL</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+
+                        <div class="labelWrapper">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+
+                        <div class="labelWrapper">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        
+                        <div class="labelWrapper">
+                            <label for="password2">CONFIRM PASSWORD</label>
+                            <input type="password" name="password2" id="password2">
+                        </div>
                     </fieldset>
                 </form>
             </div>
             <div class="footer">
                 <button type="submit" form="signUpForm">Create Account</button>
                 <div class="footerText">
-                    <p>Already have an account?</p>
+                    <p>Already have an account? &nbsp;</p>
                     <p><a href="#">Log in</a></p>
                 </div>
             </div>

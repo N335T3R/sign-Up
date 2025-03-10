@@ -68,10 +68,26 @@ main > * {
 
 fieldset {
     border: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
 }
 legend {
     font-size: small;
     font-weight: 600;
+}
+label {
+    padding-bottom: .25rem;
+    font-size: 0.4rem;
+}
+input {
+    max-width: 7rem;
+    height: .75rem;
+}
+.labelWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
 }
 
 .footer {
@@ -85,4 +101,7 @@ legend {
     border: none;
     border-radius: 0.15rem;
     height: 1.5rem;
+}
+.footerText {
+    display: flex;
 }
