@@ -1,3 +1,8 @@
+@font-face {
+    font-family: norse;
+    src: url('./assets/fonts/Norse-Bold.otf');
+}
+
 :root {
     --create-acct-btn-bgc: #596D48;
     --input-border: #E5E7EB;
@@ -26,15 +31,58 @@ body {
 }
 
 .imgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: relative; */
     width: 35%;
     height: 100%;
     background-color: green;
-    object-fit: fill;
+}
+.imgContainer > p {
+    position: absolute;
+    bottom: 16%;
+
+    font-size: 0.75rem;
+    opacity: .7;
+    color: white;
 }
 
 .leaves {
+    /* position: relative; */
     width: 100%;
+    height: 100%;
 }
+
+.blackBanner {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    bottom: 60%;
+    height: 6rem;
+    width: inherit;
+
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .4);
+}
+.bannerContainer {
+    display: flex;
+    justify-content: center;
+}
+.bannerContainer > h2 {
+    align-self: center;
+    color: white;
+    font-family: norse;
+    font-size: 4rem;
+}
+.iconDiv {
+    height: 5rem;
+}
+.iconDiv > img {
+    height: 5rem;
+}
+
 
 
 main {
@@ -56,6 +104,7 @@ main > * {
     flex-direction: column;
     padding: 1rem;
     justify-content: flex-end;
+    width: 80%;
 
     font-size: x-small;
     font-weight: 600;
